@@ -1,0 +1,222 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #560025;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav h1 {
+    color: #F5F5F5;
+    font-size: 40px;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 78%;
+    background-color: #F5F5F5;
+}
+
+main div p {
+    color: black;
+}
+.profilepic {
+    width: 85%;
+    border-radius: 5%;
+    border: solid #560025;
+    height: 78%;
+}
+.image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 7%;
+    width: 100%;
+    background-color: #560025;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.information div {
+    height: 58%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.information p, a, strong {
+    color: #560025;
+    font-family: serif;
+}
+
+.information p {
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    margin-left: 6px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+br {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    .profilepic {
+        height: 400px;
+        width: 80%;
+    }
+    .information div {
+        width: 79%;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 570px) {
+    .profilepic {
+        width: 70%;
+        height: 28em;    
+        margin-top: 5%;
+    }
+    .information div {
+        width: 73%;
+    }
+}
+@media (min-width: 571px) and (max-width: 700px) {
+   .profilepic { 
+        width: 68%;
+        height: 460px;  
+        margin-top: 3%;
+    }
+    .information div {
+        width: 69%;
+    }
+}
+
+@media (max-width: 700px) {
+    .image {
+        margin-top: 3%;
+    }
+    nav {
+        position: sticky;
+    }
+    nav h1 {
+        font-size: 25px;
+    }
+    br {
+        display: block;
+    }
+    main {
+        width: 100%;
+        display: grid;
+        height: fit-content;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .information {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    .information div {
+        margin-left: 4%;
+    }
+    footer div {
+        height: 85%;
+    }
+    footer {
+        height: 7%;
+        align-items: center;
+    }
+    footer img {
+        width: 90px;
+        height: 100%;
+    }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+    .information div{
+        height: 60%;
+        width: 90%;
+    }
+    .information p {
+        margin: 0;
+    }
+    .profilepic {
+        height:60%;
+    }
+    main {
+        grid-template-columns: 40% 60%;
+        height: 80%;
+    }
+    .image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1001px) {
+    main {
+        padding-left: 50px;
+        background-color: #F5F5F5;
+    }
+    footer div {
+        width: 150px;
+    }
+
+    .profilepic{
+        width: 72%;
+        height: 60%;
+    
+    }
+    .information p {
+        margin: 0;
+    }
+}
